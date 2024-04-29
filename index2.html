@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primer Documento HTML </title>
+    <meta
+      name="description"
+      content="En este documento aprenderemos los fundamentos del desarrollo web"
+    />
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/intro-css.css" />
+    <style>
+      h1 {
+        color: #ff0000;
+        color: #00ff00;
+        color: #0000ff;
+        color: #ff0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      Comentario 
+      en HTML
+    -->
+    <header>
+      <h1 id="inicio" style="color: #f00; background-color: black">
+        Introducción a <i>HTML</i>
+      </h1>
+      <p>Hola mundo desde HTML</p>
+      <p>
+        En este documento iremos revisando todas las etiquetas HTML más
+        utilizadas en desarrollo web.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod repellat
+        ea voluptas explicabo, natus dolor ex ipsam, quia corrupti suscipit
+        dolore eaque dignissimos nisi blanditiis totam facere velit sapiente
+        iure.
+      </p>
+    </header>
+    <nav id="menu">
+      <ul>
+        <li><a href="#encabezados">Encabezados</a></li>
+        <li><a href="#etiquetas-texto">Etiquetas de Texto</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#tablas">Tablas</a></li>
+        <li><a href="#enlaces">Enlaces</a></li>
+        <li><a href="#imagenes">Imágenes</a></li>
+        <li><a href="#audio-video">Audio y Video</a></li>
+        <li><a href="#iframe">Iframe</a></li>
+        <li><a href="#etiquetas-semanticas">Etiquetas Semánticas</a></li>
+        <li><a href="#detalle">Detalle</a></li>
+        <li><a href="#css">Introducción a CSS</a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </nav>
+    <hr />
+    <section>
+      <h2 id="encabezados">Encabezados</h2>
+      <p>
+        HTML, tiene 6 niveles de encabezados, que nos sirven para dar jerarquía
+        a los títulos del contenido de nuestros documentos.
+      </p>
+      <h1>Encabezado nivel 1</h1>
+      <h2>Encabezado nivel 2</h2>
+      <h3>Encabezado nivel 3</h3>
+      <h4>Encabezado nivel 4</h4>
+      <h5>Encabezado nivel 5</h5>
+      <h6>Encabezado nivel 6</h6>
+      <a href="#inicio">Regresar al Inicio ☝🏻</a>
+    </section>
+    <hr />
+    <section>
+      <h2 id="etiquetas-texto">Etiquetas de Texto</h2>
+      <p>
+        Este grupo de etiquetas, permiten dar formato a nuestro texto, por
+        ejemplo: negrita, cursiva, subrayado, remarcado, letras pequeñas,
+        párrafos, citas textuales, subíndices, superíndices, saltos de línea y
+        divisiones semánticas.
+      </p>
+      <p>
+        Este es un párrafo.
+        <b>Este texto esta en negritas</b>. <br /><br />
+        <i>Este texto está en cursiva</i>.
+        <b><i>Este texto tiene negrita y cursiva</i></b
+        >.
+        <br />
+        <mark>Este texto esta remarcado</mark>.
+        <u>Este texto esta subrayado</u>.
+        <small>Este texto esta en letras pequeñas</small>
+      </p>
+      <p>La fórmula del agua es H<sub>2</sub>O.</p>
+      <p>
+        La fórmula de la relatividad introducida por Einstein es e=mc<sup
+          >2</sup
+        >
+      </p>
+      <blockquote>
+        "Yo sólo sé, que no sé nada"
+        <br />
+        <cite>Sócrates</cite>
+      </blockquote>
+      <a href="#inicio">Regresar al Inicio ☝🏻</a>
+    </section>
+    <hr />
+    <section>
+      <h2 id="listas">Listas</h2>
+      <p>En HTML, principalmente tenemos 2 tipos de listas.</p>
+      <h3>Listas Desordenadas</h3>
+      <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ul>
+      <h3>Listas Ordenadas</h3>
+      <ol>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ol>
+      <ol type="A">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ol>
+      <ol start="100">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ol>
+      <ol reversed>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ol>
+      <h3>Listas anidadas</h3>
+      <ul>
+        <li>
+          Primavera
+          <ol>
+            <li>Abril</li>
+            <li>
+              Mayo
+              <ul>
+                <li>Diá del Trabajo</li>
+                <li>Día de las Madres</li>
+                <li>Día del Maestro</li>
+              </ul>
+            </li>
+            <li>Junio</li>
+          </ol>
+        </li>
+        <li>
+          Verano
+          <ol>
+            <li>Julio</li>
+            <li>Agosto</li>
+            <li>Septiembre</li>
+          </ol>
+        </li>
+        <li>
+          Otoño
+          <ol>
+            <li>Octubre</li>
+            <li>Noviembre</li>
+            <li>Diciembre</li>
+          </ol>
+        </li>
+        <li>
+          Invierno
+          <ol>
+            <li>Enero</li>
+            <li>Febrero</li>
+            <li>Marzo</li>
+          </ol>
+        </li>
+      </ul>
+      <a href="#inicio">Regresar al Inicio ☝🏻</a>
+    </section>
+    <hr />
+    <section>
+      <h2 id="tablas">Tablas</h2>
+      <table border="1">
+        <tr>
+          <th>Ciudad</th>
+          <th>País</th>
+          <th>Continente</th>
+        </tr>
+        <tr>
+          <td>CDMX</td>
+          <td>México</td>
+          <td>América</td>
+        </tr>
+        <tr>
+          <td>Paris</td>
+          <td>Francia</td>
+          <td>Europa</td>
+        </tr>
+        <tr>
+          <td>Tokyo</td>
+          <td>Japón</td>
+          <td>Asia</td>
+        </tr>
+      </table>
+      <a href="#inicio">Regresar al Inicio ☝🏻</a>
+    </section>
+    <hr />
+    <section>
+      <h2 id="enlaces">Enlaces</h2>
+      <a href="otro.html">Ir a otro documento</a>
+      <a href="https://youtube.com/@jonmircha" target="_blank">
+        Canal de YouTube
+      </a>
+      <a href="mailto:jonmircha@gmail.com">jonmircha@gmail.com</a>
+      <a href="tel:5215512345678">5215512345678</a>
+      <a href="#inicio">Regresar al Inicio ☝🏻</a>
+    </section>
+    <hr />
+    <section>
+      <h2 id="imagenes">Imágenes</h2>
+      <img src="img/html-for-babies.jpg" alt="HTML para bebés" />
+      <img
+        src="img/periodic-table-of-html-elements.png"
+        alt="Tabla de las etiquetas HTML"
+      />
+      <img src="img/this-is-fine.gif" alt="This is Fine" />
+      <img src="img/kenai.svg" alt="kEnAi" />
+      <img src="img/git-js.webp" alt="Git y JS" />
+      <a href="#inicio">Regresar al Inicio ☝🏻</a>
+    </section>
+    <hr />
+    <section>
+      <h2 id="audio-video">Audio y Video</h2>
+      <audio src="media/feels.mp3" controls preload></audio>
+      <video
+        src="media/kenai.mp4"
+        controls
+        preload
+        poster="img/puesta-de-sol.jpg"
+      ></video>
+      <a href="#inicio">Regresar al Inicio ☝🏻</a>
+    </section>
+    <hr />
+    <section>
+      <h2 id="iframe">Iframe</h2>
+      <iframe
+        width="100%"
+        height="600"
+        src="media/syllabus.pdf"
+        frameborder="0"
+      ></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/-oK6zL01fNM?si=9G7w0zKcbq3esqRn"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.9156442928288!2d-99.15761039768573!3d19.376456512184273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff82b342aee3%3A0x93244993291fd0cc!2sUniversidad%20Amerike%20Campus%20CDMX!5e0!3m2!1ses-419!2smx!4v1713283145576!5m2!1ses-419!2smx"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <hr />
+    <section>
+      <h2 id="etiquetas-semanticas">Etiquetas Semánticas</h2>
+      <div>Esto es una div</div>
+      <header>Esto es un header</header>
+      <nav>Esto es un nav</nav>
+      <main>Esto es un main</main>
+      <aside>Esto es un aside</aside>
+      <article>Esto es un article</article>
+      <section>Esto es una section</section>
+      <footer>Esto es un footer</footer>
+      <a href="#inicio">Regresar al Inicio ☝🏻</a>
+    </section>
+    <hr />
+    <section>
+      <h2 id="detalle">Detalle</h2>
+      <details>
+        <summary>Título del Detalle</summary>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magni
+            culpa, quasi quam numquam ex facilis maiores optio nam porro, rem
+            non minus neque ut alias id consequatur! Repellendus, architecto!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            praesentium, totam, soluta numquam ipsam enim vitae consectetur,
+            quia repudiandae eius repellendus perspiciatis. Eius voluptatem
+            totam quidem consectetur, molestias odio officiis.
+          </p>
+          <img src="img/this-is-fine.gif" alt="This is Fine" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            expedita ducimus rerum at nihil laborum velit vero, magni animi
+            similique assumenda repudiandae? Laboriosam aliquid, dicta sequi
+            consequuntur soluta suscipit alias!
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat,
+            accusamus eligendi quidem dignissimos molestiae dolore rerum iure
+            doloremque voluptatem nostrum ipsa, reprehenderit quas consectetur
+            est eaque pariatur repellendus recusandae quo?
+          </p>
+        </div>
+      </details>
+      <details open>
+        <summary>Título del Detalle</summary>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magni
+            culpa, quasi quam numquam ex facilis maiores optio nam porro, rem
+            non minus neque ut alias id consequatur! Repellendus, architecto!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            praesentium, totam, soluta numquam ipsam enim vitae consectetur,
+            quia repudiandae eius repellendus perspiciatis. Eius voluptatem
+            totam quidem consectetur, molestias odio officiis.
+          </p>
+          <img src="img/this-is-fine.gif" alt="This is Fine" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            expedita ducimus rerum at nihil laborum velit vero, magni animi
+            similique assumenda repudiandae? Laboriosam aliquid, dicta sequi
+            consequuntur soluta suscipit alias!
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat,
+            accusamus eligendi quidem dignissimos molestiae dolore rerum iure
+            doloremque voluptatem nostrum ipsa, reprehenderit quas consectetur
+            est eaque pariatur repellendus recusandae quo?
+          </p>
+        </div>
+      </details>
+      <a href="#inicio">Regresar al Inicio ☝🏻</a>
+    </section>
+    <hr />
+    <section>
+      <h2 id="css">Introducción a CSS</h2>
+      <p class="fs-20 text-chocolate bg-pink text-right">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non voluptatem
+        accusamus minima facilis repellat fugit ex vitae, a ab id adipisci omnis
+        velit vel quo ut? Explicabo quidem facilis sed!
+      </p>
+      <p class="text-red bg-orange fs-12 text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit
+        sequi hic, iste id numquam, deleniti voluptatum assumenda excepturi
+        accusamus nostrum tempora eaque illo rerum earum illum alias repellat
+        laborum.
+      </p>
+      <p class="text-left fs-16 bg-olive text-green">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed repellat,
+        blanditiis labore qui porro culpa modi aperiam illum quae corporis odio
+        vero quod earum quos saepe ipsum nam soluta? Mollitia!
+      </p>
+      <p class="bg-pink text-red text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam
+        incidunt rem a, veritatis consequuntur cum quas assumenda excepturi ex
+        commodi fugiat odio facilis corporis nulla voluptatem quis molestias
+        ducimus?
+      </p>
+      <p class="fs-20 text-chocolate">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident
+        modi quis, aliquam dolores quod. Eos officiis, ullam est, quam sequi
+        quisquam deserunt facilis architecto officia, modi nisi ipsam ea.
+      </p>
+      <p class="text-right fs-12 text-red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque
+        aperiam quod vel quae, ullam deserunt eum mollitia harum totam assumenda
+        doloremque, iste eaque suscipit inventore illo quos unde quasi.
+      </p>
+      <img
+        class="rounded sepia"
+        src="https://avatars.githubusercontent.com/u/11139429?v=4"
+        alt="jonmircha"
+      />
+      <img
+        class="rounded gray-scale"
+        src="img/this-is-fine.gif"
+        alt="This is fine"
+      />
+      <img id="baby-html" src="img/html-for-babies.jpg" alt="HTML for babies" />
+      <ul id="estaciones">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ul>
+      <h3>Modelo de Caja (Box Model)</h3>
+      <div class="box">Caja 1</div>
+      <div class="box">Caja 2</div>
+      <div class="box">Caja 3</div>
+      <div class="bg-pink d-inline">Caja de Bloque</div>
+      <span class="bg-pink d-block">Caja de Línea</span>
+      <span class="bg-pink d-none">Caja Oculta</span>
+      <a href="#inicio">Regresar al Inicio ☝🏻</a>
+    </section>
+    <hr />
+    <script src="js/intro-js.js"></script>
+  </body>
+</html>
