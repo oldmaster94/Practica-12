@@ -1,0 +1,53 @@
+:root {
+  --primary-color: #00eeff;
+  --secondary-color: #00eeff;
+  
+}
+
+
+body {
+  font-size: 16px;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+  color: #f2f2f2; 
+  background-color:#000000;
+}
+
+
+a {
+  color: #007bff;
+  color:var(--primary-color)
+}
+
+
+a:hover {
+  color: #00b371; 
+}
+
+
+img, iframe {
+  max-width: 100%;
+}
+
+
+table {
+  width: 100%;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+
+.bg-red {
+  background-color: #fefefe;
+}
+
